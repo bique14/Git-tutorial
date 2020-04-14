@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Elm parcel</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body class="text-center">
+    <div class="bg-white py-5 bg-green-200">
+      <h1 class="font-bold text-6xl">GIT TUTORIAL ⚙️</h1>
+    </div>
+    <div class="bg-white py-6">
+      <h1 class="font-bold text-4xl my-4">Install Git</h1>
+      <div class="justify-center m-auto w-1/2 mb-4 bg-gray-300 rounded p-5">
+        <div class="text-left text-2xl">
+          <h3 class="font-bold text-gray-800">MacOS</h3>
+          <span>ขั้นตอนที่ 1 : กดปุ่ม
+            <span class="font-bold">Control+SpaceBar</span>
+            ที่คีย์บอร์ด แล้วพิมพ์ว่า
+            <span class="font-bold">Terminal</span>
+          </span>
+          <span class="block">ขั้นตอนที่ 2 : เปิด Terminal แล้ว Copy คำสั่งเพื่อติดตั้ง HomeBrew</span>
+          <span class="block bg-black rounded text-green-400 px-2 py-1 text-sm overflow-scroll">
+            /usr/bin/ruby -e "$(curl -fsSL
+            https://raw.githubusercontent.com/Homebrew/install/master/install)"brew
+            doctor
+          </span>
+          <span>ขั้นตอนที่ 3 : ติดตั้ง Git โดยใช้คำสั่ง</span>
+          <span class="block bg-black rounded text-green-400 px-2 py-1 text-sm">
+            brew install git
+          </span>
+        </div>
+      </div>
+      <div class="justify-center m-auto w-1/2 mb-4 bg-gray-300 rounded p-5">
+        <div class="text-left text-2xl">
+          <h3 class="font-bold text-gray-800">Linux</h3>
+          <span>ขั้นตอนที่ 1 : กดปุ่ม
+            <span class="font-bold">Ctrl+Alt+t</span>
+            ที่คีย์บอร์ด เพื่อเปิด Terminal
+          </span>
+          <span class="block">ขั้นตอนที่ 2 : Copy คำสั่งเพื่อติดตั้ง Git</span>
+          <span class="block bg-black rounded text-green-400 px-2 py-1 text-sm">
+            sudo apt update && sudo apt upgrade && sudo apt install git
+          </span>
+        </div>
+      </div>
+      <div class="justify-center m-auto w-1/2 mb-4 bg-gray-300 rounded p-5">
+        <div class="text-left text-2xl">
+          <h3 class="font-bold text-gray-800">Windows</h3>
+          <a href="https://gitforwindows.org/" target="_blank">กดปุ่มนี้เพื่อดาวน์โหลด Git</span>
+        </div>
+      </div>
+    </div>
+    <div class="bg-blue-300 py-6">
+      <h1 class="font-bold text-4xl text-blue-900 my-4">ต้องการ Clone project ลงมาที่เครื่องของเรา ?</h1>
+      <div class="justify-center m-auto w-1/2 mb-4">
+        <img class="rounded" src="images/git-clone.png">
+        <h3 class="text-2xl my-4">กดปุ่ม Clone แล้วเลือก Copy URL</h3>
+        <span class="inline">สามารถ Clone project ลงมาที่เครื่องของเราได้โดยใช้คำสั่ง</span>
+        <h3 class="inline text-3xl font-bold mt-2 text-blue-900">
+          git clone &lt;URL ที่Copyมา&gt;
+        </h3>
+        <span>เช่น</span>
+        <span class="inline-block mt-4 px-4 py-1 bg-black rounded text-xl text-green-400">
+          git clone git@git.proteus-tech.com:hotnow/hotnow-webviews.git
+        </span>
+      </div>
+    </div>
+    <div class="bg-black text-white py-6">
+      <h1 class="font-bold text-4xl my-4">ได้การ์ดแล้ว จะสร้าง Branch ใหม่ยังไงดี ?</h1>
+      <div class="justify-center m-auto w-1/2 mb-4">
+        <img class="rounded" src="images/git-branch.png">
+        <span class="text-2xl">
+          <span class="text-red-400 font-bold">เช็คให้แน่ใจ</span>
+          ว่าปัจจุบันเราอยู่ที่ branch develop หรือไม่ ซึ่งสามารถเช็คได้โดยใช้คำสั่ง
+        </h3>
+        <span class="inline-block mt-2 px-4 py-1 bg-white rounded text-2xl text-black">
+          git branch
+        </span>
+        <span class="text-2xl block mt-4">
+          หาก branch ปัจจุบัน ไม่ใช่ branch develop
+          <span class="underline">เราสามารถย้าย branch</span>
+          ได้โดยใช้คำสั่ง
+        </span>
+        <span class="inline-block mt-2 px-4 py-1 bg-white rounded text-2xl text-black">
+          git checkout &lt;branch_name&gt;
+        </span>
+        <span class="text-2xl block mt-4">
+          <span class="text-2xl block mt-4">
+            หากเป็น branch develop แล้ว
+            <span class="underline">เราสามาถสร้าง branch ใหม่</span>
+            ได้โดยใช้คำสั่ง
+          </span>
+        </span>
+        <span class="inline-block mt-2 px-4 py-1 bg-white rounded text-2xl text-black">
+          git checkout -b &lt;feature_name&gt;
+        </span>
+        
+      </div>
+    </div>
+    <div>
+      git fetch
+      git pull
+      git merge
+
+      git add
+      git commit
+      git push
+    </div>
+  </body>
+</html>
