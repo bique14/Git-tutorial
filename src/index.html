@@ -10,8 +10,19 @@
   <body class="text-center">
     <div class="bg-white py-5 bg-green-200">
       <h1 class="font-bold text-6xl">GIT TUTORIAL ⚙️</h1>
+      <ul>
+        <li>
+          <a href="#install-git">Install Git</a>
+        </li>
+        <li>
+          <a href="#git-clone">Git clone</a>
+        </li>
+        <li>
+          <a href="#git-branch">Branching</a>
+        </li>
+      </ul>
     </div>
-    <div class="bg-white py-6">
+    <div class="bg-white py-6" id="install-git">
       <h1 class="font-bold text-4xl my-4">Install Git</h1>
       <div class="justify-center m-auto w-1/2 mb-4 bg-gray-300 rounded p-5">
         <div class="text-left text-2xl">
@@ -53,60 +64,90 @@
         </div>
       </div>
     </div>
-    <div class="bg-blue-300 py-6">
-      <h1 class="font-bold text-4xl text-blue-900 my-4">ต้องการ Clone project ลงมาที่เครื่องของเรา ?</h1>
-      <div class="justify-center m-auto w-1/2 mb-4">
-        <img class="rounded" src="images/git-clone.png">
-        <h3 class="text-2xl my-4">กดปุ่ม Clone แล้วเลือก Copy URL</h3>
-        <span class="inline">สามารถ Clone project ลงมาที่เครื่องของเราได้โดยใช้คำสั่ง</span>
-        <h3 class="inline text-3xl font-bold mt-2 text-blue-900">
-          git clone &lt;URL ที่Copyมา&gt;
-        </h3>
-        <span>เช่น</span>
-        <span class="inline-block mt-4 px-4 py-1 bg-black rounded text-xl text-green-400">
-          git clone git@git.proteus-tech.com:hotnow/hotnow-webviews.git
-        </span>
+    <div class="bg-blue-300 py-6" id="git-clone">
+      <div class="py-10">
+        <h1 class="font-bold text-4xl text-blue-900 mb-10">ต้องการ Clone project ลงมาที่เครื่องของเรา ?</h1>
+        <div class="justify-center m-auto w-1/2 mb-4">
+          <img class="rounded" src="images/git-clone.png">
+          <h3 class="text-2xl my-4">กดปุ่ม Clone แล้วเลือก Copy URL</h3>
+          <span class="inline">สามารถ Clone project ลงมาที่เครื่องของเราได้โดยใช้คำสั่ง</span>
+          <h3 class="inline text-3xl font-bold mt-2 text-blue-900">
+            git clone &lt;URL ที่Copyมา&gt;
+          </h3>
+          <span>เช่น</span>
+          <span class="inline-block mt-2 px-4 py-1 bg-white rounded text-2xl text-black rounded-lg">
+            git clone git@git.proteus-tech.com:hotnow/hotnow-webviews.git
+          </span>
+        </div>
       </div>
     </div>
-    <div class="bg-black text-white py-6">
-      <h1 class="font-bold text-4xl my-4">ได้การ์ดแล้ว จะสร้าง Branch ใหม่ยังไงดี ?</h1>
-      <div class="justify-center m-auto w-1/2 mb-4">
-        <img class="rounded" src="images/git-branch.png">
-        <span class="text-2xl">
-          <span class="text-red-400 font-bold">เช็คให้แน่ใจ</span>
-          ว่าปัจจุบันเราอยู่ที่ branch develop หรือไม่ ซึ่งสามารถเช็คได้โดยใช้คำสั่ง
-        </h3>
-        <span class="inline-block mt-2 px-4 py-1 bg-white rounded text-2xl text-black">
-          git branch
-        </span>
-        <span class="text-2xl block mt-4">
-          หาก branch ปัจจุบัน ไม่ใช่ branch develop
-          <span class="underline">เราสามารถย้าย branch</span>
-          ได้โดยใช้คำสั่ง
-        </span>
-        <span class="inline-block mt-2 px-4 py-1 bg-white rounded text-2xl text-black">
-          git checkout &lt;branch_name&gt;
-        </span>
-        <span class="text-2xl block mt-4">
+    <div class="bg-black text-white py-6" id="git-branch">
+      <div class="py-10">
+        <h1 class="font-bold text-4xl mb-10">ได้การ์ดแล้ว จะสร้าง Branch ใหม่ยังไงดี ?</h1>
+        <div class="justify-center m-auto w-1/2 mb-4">
+          <img class="rounded" src="images/git-branch.png">
+          <span class="text-2xl">
+            <span class="text-red-400 font-bold">เช็คให้แน่ใจ</span>
+            ว่าปัจจุบันเราอยู่ที่ branch develop หรือไม่ ซึ่งสามารถเช็คได้โดยใช้คำสั่ง
+          </h3>
+          <span class="inline-block mt-2 px-4 py-1 bg-white rounded text-2xl text-black rounded-lg">
+            git branch
+          </span>
+          <span class="text-2xl block mt-4">
+            หาก branch ปัจจุบัน ไม่ใช่ branch develop
+            <span class="underline">เราสามารถย้าย branch</span>
+            ได้โดยใช้คำสั่ง
+          </span>
+          <span class="inline-block mt-2 px-4 py-1 bg-white rounded text-2xl text-black rounded-lg">
+            git checkout &lt;branch_name&gt;
+          </span>
           <span class="text-2xl block mt-4">
             หากเป็น branch develop แล้ว
             <span class="underline">เราสามาถสร้าง branch ใหม่</span>
             ได้โดยใช้คำสั่ง
           </span>
-        </span>
-        <span class="inline-block mt-2 px-4 py-1 bg-white rounded text-2xl text-black">
-          git checkout -b &lt;feature_name&gt;
-        </span>
+          <span class="inline-block mt-2 px-4 py-1 bg-white rounded text-2xl text-black rounded-lg">
+            git checkout -b &lt;feature_name&gt;
+          </span>
+          <span class="text-2xl block">
+            และจะเปลี่ยนไปอยู่ branch ที่สร้างทันที
+          </span>
+        </div>
       </div>
     </div>
+
+    <div class="bg-yellow-300 py-6">
+      <div class="py-6">
+        <h1 class="font-bold text-4xl text-yellow-900 mb-10">ทำงานเสร็จเรียบร้อยแล้ว จะเซฟงานอย่างไรดี ?</h1>
+        <div class="justify-center m-auto w-1/2 mb-4">
+          <span class="block text-2xl">เมื่อเราทำงานเสร็จไปขณะหนึ่งแล้ว เราสามารถเซฟเก็บไว้ก่อนได้ โดยใช้คำสั่ง</span>
+          <div>
+            <span class="inline-block mt-2 px-4 py-1 bg-white rounded text-2xl text-black rounded-lg">
+              git add &lt;file_name&gt;
+            </span>
+            <span>สำหรับต้องการเซฟทีละไฟล์</span>
+          </div>
+          <div>
+            <span class="inline-block mt-2 px-4 py-1 bg-white rounded text-2xl text-black rounded-lg">
+              git add .
+            </span>
+            <span>สำหรับเซฟไฟล์ที่มีการเปลี่ยนแปลงทั้งหมด</span>
+          </div>
+          <span class="block mt-4 text-2xl">หลังจากนั้น เราจำเป็นที่จะต้องใช้คำสั่ง Commit เพื่อเขียนข้อความอธิบายเกี่ยวกับการเซฟไฟล์ของเรา ว่าเราทำอะไรไปบ้าง</span>
+          <span class="inline-block mt-2 px-4 py-1 bg-white rounded text-2xl text-black rounded-lg">
+            git commit -m "ข้อความอธิบายสิ่งที่เราทำ"
+          </span>
+        </div>
+      </div>
+    </div>
+
     <div>
+      git push
+
       git fetch
       git pull
+      conflict
       git merge
-
-      git add
-      git commit
-      git push
     </div>
   </body>
 </html>
